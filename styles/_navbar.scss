@@ -16,7 +16,7 @@
   position: relative;
 
   &__logo {
-    color: $dark;
+    color: $light;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -48,7 +48,7 @@
     }
 
     &--links {
-      color: $dark;
+      color: $light;
       @extend %align-center;
       justify-content: center;
       text-decoration: none;
