@@ -71,20 +71,44 @@
   transition: all 0.3s ease;
 }
 
-.navbar__menu #button {
+.navbar__menu--btn {
   padding: 12px 24px;
   border: none;
   outline: none;
   border-radius: 4px;
-  background: #00cc66;
+  background: #D22330;
   margin-left: 16px;
   color: #f7f7f7;
+  font-size: 1rem;
+  background-color: #D22330;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
-.navbar__menu #button:hover {
-  background: #fb4b4e;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+.navbar__menu--btn a {
+  position: relative;
+  z-index: 2;
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.navbar__menu--btn:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #00cc66;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border-radius: 4px;
+}
+
+.navbar__menu--btn:hover:after {
+  width: 100%;
 }
 
 * {
@@ -179,7 +203,7 @@
 
 .hero__container--btn {
   font-size: 1rem;
-  background-color: #00cc66;
+  background-color: #D22330;
   padding: 14px 32px;
   border: none;
   border-radius: 4px;
@@ -206,7 +230,7 @@
   left: 0;
   width: 0;
   height: 100%;
-  background: #fb4b4e;
+  background: #00cc66;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   border-radius: 4px;
