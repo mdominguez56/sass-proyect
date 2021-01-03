@@ -9,7 +9,8 @@
 
 // Hero Section CSS
 .hero {
-  background-color: $light;
+
+    background-color: $grey;
 
   &__container {
     display: grid;
@@ -113,8 +114,8 @@
     }
 
     &--img {
-      height: 100%;
-      width: 100%;
+      height: 35vw;
+      width: 35vw;
     }
   }
 }

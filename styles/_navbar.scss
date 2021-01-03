@@ -7,7 +7,7 @@
 }
 
 .navbar {
-  background: $light;
+  background: $blue2;
   height: 80px;
   display: flex;
   justify-content: space-between;
@@ -55,7 +55,7 @@
       padding: 0 1rem;
 
       &:hover {
-        color: $lime;
+        color: $red;
         transition: all 0.3s ease;
       }
     }
@@ -75,7 +75,7 @@
       transition: all 0.3s;
       
     }
-    
+
     &--btn a {
       position: relative;
       z-index: 2;
